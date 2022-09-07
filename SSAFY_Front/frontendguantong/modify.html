@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review</title>
+  <link rel="stylesheet" href="./modify.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Gamja Flower&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Single Day&display=swap');
+  </style>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <h1><i class="bi bi-card-list" style="color:blue"></i> &nbsp운동영상 리뷰</h1>
+    <hr>
+    <form name="reviewform" class="reviewform" method="post" action="/submit">
+      <input type="hidden" name="rate" id="rate" value="0" />
+
+      <div class="review_rating rating_point">
+        <div class="warning_msg">별점을 선택해 주세요.</div>
+        <div class="rating">
+          <div class="ratefill"></div>
+          <!-- [D] 해당 별점이 선택될 때 그 점수 이하의 input엘리먼트에 checked 클래스 추가 -->
+          <input type="checkbox" name="rating" id="rating1" value="1" class="rate_radio" title="1점">
+          <label for="rating1"></label>
+          <input type="checkbox" name="rating" id="rating2" value="2" class="rate_radio" title="2점">
+          <label for="rating2"></label>
+          <input type="checkbox" name="rating" id="rating3" value="3" class="rate_radio" title="3점">
+          <label for="rating3"></label>
+          <input type="checkbox" name="rating" id="rating4" value="4" class="rate_radio" title="4점">
+          <label for="rating4"></label>
+          <input type="checkbox" name="rating" id="rating5" value="5" class="rate_radio" title="5점">
+          <label for="rating5"></label>
+        </div>
+      </div>
+      <div class="review_contents">
+        <textarea rows="1" class="review_title" placeholder="제목"></textarea>
+        <textarea rows="8" class="review_con" placeholder="내용"></textarea>
+        <div class="warning_msg">제목과 내용을 작성해 주세요.</div>
+        <p class="text-center" style="font-family: 'Gaegu'">별점 및 100자 이내의 리뷰를 남겨주세요.</p>
+      </div>
+      <div class="submit">
+        <input type="button" name="modify" id="modify" value="수정">
+        <input type="button" name="cancel" id="cancel" value="취소">
+      </div>
+    </form>
+  </div>
+</body>
+  <script type="text/javascript" src="./modify.js"></script>
+
+</html>

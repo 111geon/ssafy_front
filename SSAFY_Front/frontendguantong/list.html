@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List</title>
+  <link rel="stylesheet" href="./list.css" />
+  <script type="text/javascript" src="./list.js"></script>
+  <style>
+  </style>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <h1><i class="bi bi-card-list" style="color:blue"></i> &nbsp운동영상 리뷰</h1>
+    <hr>
+    <div class="video">
+      
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between">
+      <div class="submit">
+        <button class="make"></button>
+      </div>
+      <div class="search d-flex">
+        <button class="btn btn-outline-primary"><i class="bi bi-search"></i></button>
+        <input type="text" placeholder="제목 및 내용으로 검색">
+      </div>
+    </div>
+    <hr>
+    <div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">번호</th>
+            <th scope="col">제목</th>
+            <th scope="col">별점</th>
+            <th scope="col">작성시간</th>
+          </tr>
+        </thead>
+        <tbody class="table-rows">
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</body>
+
+</html>

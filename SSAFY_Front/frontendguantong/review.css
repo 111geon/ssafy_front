@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single Day&display=swap');
+
+html,
+body {
+  background-color: #fff;
+  height: 100%;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #a00;
+}
+
+h1 {
+  font-family: 'Gamja Flower';
+  text-align: center;
+  background-color: #fff;
+  padding: 5px;
+  margin: 0;
+}
+
+.wrap {
+  position: relative;
+  top: 50px;
+  max-width: 600px;
+  max-height: 700px;
+  margin: 0 auto;
+
+  background-color: #fff;
+  height: 100%;
+  padding: 20px;
+  border-radius: 1%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px 5px gray;
+}
+
+.reviewform textarea {
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 17px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  left: 150px;
+  background-color: lightgoldenrodyellow;
+}
+
+.rating .rate_radio {
+  position: relative;
+  display: inline-block;
+  z-index: 20;
+  opacity: 0.001;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  cursor: pointer;
+  vertical-align: top;
+  display: none;
+}
+
+.rating .ratefill {
+  background-color: yellow;
+  width: 0;
+  height: 50px;
+  position: absolute;
+}
+
+.rating .rate_radio+label {
+  position: relative;
+  display: block;
+  float: left;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-image: url(./image/starrate.png);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  cursor: pointer;
+}
+
+.submit {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.submit input[id="register"] {
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid royalblue;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px gray;
+  font-weight: bold;
+  color: royalblue;
+}
+
+.submit input[id="cancel"] {
+  padding: 10px 20px;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px gray;
+  font-weight: bold;
+  color: tomato;
+}
+
+.warning_msg {
+  font-family: 'Single Day';
+  display: none;
+  position: relative;
+  text-align: center;
+  background: #ffffff;
+  line-height: 30px;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  color: red;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #e0e0e0;
+  border-radius: 10px;
+}

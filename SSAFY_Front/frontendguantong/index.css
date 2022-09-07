@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja Flower&display=swap');
+
+header {
+    margin: 5px 1% 5px 1%;
+    font-weight: bold;
+    font-family: 'Gamja Flower';
+    font-size: 24px;
+}
+
+main {
+    padding: 0 10% 0 10%;
+    font-family: 'Jua';
+}
+
+.banner {
+    height: 250px;
+    background: url(data/gym-cardio.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0 2% 0;
+}
+
+.main {
+    padding: 2% 0 2% 0;
+}
+
+.buttons {
+    padding: 0 0 1% 0;
+}
